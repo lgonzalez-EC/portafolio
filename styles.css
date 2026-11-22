@@ -100,12 +100,9 @@ header {
         min-height: 100vh;
     }
 }
-
 /***********************/
 /* Header End */
-/***********************/
 
-/***********************/
 /* Proyectos Start */
 /***********************/
 /* #proyectos {
@@ -150,9 +147,7 @@ header {
 }
 /***********************/
 /* Proyectos End */
-/***********************/
 
-/***********************/
 /* Experiencia Start */
 /***********************/
 #experiencia {
@@ -160,7 +155,6 @@ header {
         center/cover;
 }
 
-/***********************/
 /* Habilidades Start */
 /***********************/
 #habilidades {
@@ -196,9 +190,7 @@ header {
 
 /***********************/
 /* Habilidades End */
-/***********************/
 
-/***********************/
 /* Timeline Styles Start */
 /***********************/
 .timeline {
@@ -310,11 +302,40 @@ header {
 
 /***********************/
 /* Timeline Styles End */
-/***********************/
 
+/* Herramientas Start */
 /***********************/
+.section-tools {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    justify-items: center;
+    gap: 1rem;
+}
+
+.section-tools img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+@media (max-width: 992px) {
+    .section-tools {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        row-gap: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-tools {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+/***********************/
+/* Herramientas End */
+
 /* footer End */
 /***********************/
 footer {
-    background: url(assets/background_footer.webp) no-repeat center center/cover;
+    background: url("assets/background_footer.webp") no-repeat center
+        center/cover;
 }
